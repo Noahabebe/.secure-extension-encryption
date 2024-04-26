@@ -1,0 +1,12 @@
+<!-- upload.ejs -->
+
+<form action="/encrypt" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <button type="submit">Encrypt File</button>
+</form>
+
+<form action="/decrypt" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="text" name="token" placeholder="Enter OTP">
+    <button type="submit">Decrypt File</button>
+</form>
