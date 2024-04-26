@@ -1,0 +1,11 @@
+<html>
+<body>
+    <h1>Verify OTP</h1>
+    <form action="/verify" method="post">
+        <input type="hidden" name="secret" value="<%= secret %>">
+        <input type="text" name="token" placeholder="Enter OTP">
+        <input type="submit" value="Verify">
+    </form>
+    <img src="data:image/png;base64,<%= qrCode %>" alt="QR Code">
+</body>
+</html>
